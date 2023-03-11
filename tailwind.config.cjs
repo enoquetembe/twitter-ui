@@ -5,7 +5,23 @@ module.exports = {
     './index.html'
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'twitter-blue': '#1da1f2',
+        'twitter-black-primary': '#0f1419',
+        'twitter-black-900': '#121214',
+        'twitter-gray-primary': '#ebeef0',
+        'twitter-gray-500': '#828282'
+      },
+      
+      fontFamily: {
+        'roboto': 'Roboto'
+      },
+
+      gridTemplateColumns: {
+        'twitter-grid': '300px 1fr'
+      }
+    },
   },
   plugins: [],
 }
