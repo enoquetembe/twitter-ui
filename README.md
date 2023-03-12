@@ -1,4 +1,4 @@
-<h1 align="center">Twitter UI Colone</h1>
+<h1 align="center">Twitter UI Clone</h1>
 
 
 <p align="center">
