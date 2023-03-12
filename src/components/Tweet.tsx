@@ -2,27 +2,30 @@ import { ArrowsClockwise, ChatCircle, Heart } from "phosphor-react"
 import { Link } from "react-router-dom"
 
 interface TweetProps {
-    content: string
+    name: string,
+    user: string,
+    content: string,
+    imageUrl?: string
 }
 
-export function Tweet({ content }: TweetProps) {
+export function Tweet({name, user, content, imageUrl }: TweetProps) {
     return(
         <Link to='/tweet' 
             className="grid grid-cols-tweet-grid border border-twitter-black-secondary gap-3 px-6 py-5"
         >
             <img 
-                src="https://github.com/enoquetembe.png" 
+                src={imageUrl} 
                 alt="Enoque Tembe"
                 className="w-12 h-12 rounded-[999px]" 
             />
 
             <div className="flex flex-col gap-3">
                 <div className="flex items-center gap-1">
-                    <strong>Enoque Tembe</strong>
-                    <span className="text-[14px] text-gray-500">@enoquetembe</span>
+                    <strong>{name}</strong>
+                    <span className="text-[14px] text-gray-500">{`@${user}`}</span>
                 </div>
 
-                <p className="leading-tight">
+                <p className="leading-normal">
                   { content }
                 </p>
 

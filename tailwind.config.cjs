@@ -24,7 +24,8 @@ module.exports = {
 
       gridTemplateColumns: {
         'twitter-grid': '300px 1fr',
-        'tweet-grid': '48px 1fr'
+        'tweet-grid': '48px 1fr',
+        'responsive-grid': '80px 1fr',
       }
     },
   },

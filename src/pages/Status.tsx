@@ -1,3 +1,4 @@
+import Shelcia from '../assets/shelcia.png'
 import { FormEvent, useState } from "react";
 import { Header } from "../components/Header";
 import { Line } from "../components/Line";
@@ -22,8 +23,17 @@ export function Status() {
   return (
     <main className="">
       <Header title="Tweet" />
+      <Tweet 
+      name='Enoque Tembe' 
+      user='enoquetembe' 
+      content="Acabei de migrar um projeto React GIGANTE de create-react-app para Vite e os resultados foram: 
 
-      <Tweet content="Tweet 1" />
+      ✅ npm start: De 32s para 400ms (sim, demorava 30s) 
+      ✅ npm build: De 120s para 22s
+      
+      Além disso, troquei do Yarn para o PNPM e o install das deps mudou de 24s para 8s 🔥" 
+      imageUrl='https://github.com/enoquetembe.png'
+    />
 
       <Line />
 
@@ -55,11 +65,17 @@ export function Status() {
         </button>
       </form>
 
-      {
+      {/* {
         answers.map(answer =>(
-          <Tweet content={answer}/>
+          <Tweet name='Enoque Tembe' user='enoquetembe' content={answer} imageUrl='https://github.com/enoquetembe.png'/>
         ))
-      }
+      } */}
+      <Tweet 
+        name='Shelcia Miguel' 
+        user='shemi' 
+        content="How!! Amazing" 
+        imageUrl={Shelcia}
+        />
     </main>
   );
 }
