@@ -1,5 +1,7 @@
 import logo from '../assets/Logo.svg'
+import '../global/details.css'
 import { House, Hash, Bell, BookmarkSimple, Envelope, FileText, User, DotsThreeCircle } from 'phosphor-react'
+import { Link, NavLink } from 'react-router-dom'
 
 export function Sidebar() {
 
@@ -12,10 +14,10 @@ export function Sidebar() {
             />
 
             <nav className='flex flex-col gap-8'>
-                <a href="" className='flex items-center gap-5 text-xl font-bold'>
-                    <House className='w-8 h-8 '/>
+                <NavLink to="/" className='flex items-center gap-5 text-xl font-bold'>
+                    <House className='w-8 h-8 ' weight='fill'/>
                     Home
-                </a>
+                </NavLink>
                 <a href="" className='flex items-center gap-5 text-xl font-bold'>
                     <Hash className='w-8 h-8 '/>
                     Explorer
